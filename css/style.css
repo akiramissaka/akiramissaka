@@ -1,0 +1,401 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #dfdfdf;
+	font-family: roboto, verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1{
+	color: #deff00;
+	text-align: center;
+}
+a{color: inherit; text-decoration: none;}
+ul{margin: 0; padding: 0;}
+ul li{list-style: none;}
+.main-container{overflow: hidden;}
+
+.main-container .sobre-page,
+.main-container .contato-page,
+.main-container .portfolio-page{
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 4rem 0 4rem 0;
+}
+
+/************* navigation ***************/
+
+/*.main-container{height: 100%;}*/
+nav.menu-nav{
+	border-bottom: 0.1rem solid #deff00;
+	padding: 0.5rem 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+nav.menu-nav::before{
+	background-color: #4a423f;
+	content: "";
+	height: 100%;
+	opacity: 0.9;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+nav.menu-nav .logo{
+	padding: 1rem;
+	text-align: center;
+}
+nav.menu-nav .logo a{
+	border: 0.15em solid;
+	border-radius: 10%/50%;
+	color: #deff00;
+	display: inline-block;
+	font-size: 1.5rem;
+	line-height: normal;
+	padding: 2px 5px;
+	text-decoration: none;
+}
+nav.menu-nav .menu-mob{
+	color: #deff00;
+	font-size: 1.5rem;
+	margin: 1.5rem 1rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+nav.menu-nav .menu-mob i{
+	padding-top: 9px;
+}
+nav.menu-nav .dev{
+	color: #deff00;
+	display: none;
+	font-size: 1rem;
+	line-height: normal;
+	padding: 0 1rem;
+	text-align: center;
+}
+nav.menu-nav ul.main-menu{
+	height: 0;
+	/*margin-top: 0.7rem;*/
+	overflow: hidden;
+}
+nav.menu-nav ul.main-menu.show-mobile{
+	height: auto;
+}
+nav.menu-nav ul.main-menu a{
+	box-sizing:border-box;
+	color: #deff00;
+	display: block;
+	font-size: 1.2rem;
+	padding: 0.5rem 0.8rem;
+}
+nav.menu-nav ul.main-menu a:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+	border-left: 0.15em solid;
+}
+
+/************* sobre mim ***************/
+
+.main-container .sobre-page{
+	background: url(../img/bg/bg-sobre.jpg) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-bottom: 6rem;
+	position: relative;
+}
+.main-container .sobre-page .container-foto-desc{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+.main-container .sobre-page .container-foto,
+.main-container .sobre-page .sobre-desc{
+	padding: 1rem;
+	width: 100%;
+}
+.main-container .sobre-page .container-foto{text-align: center;}
+.main-container .sobre-page .container-foto img{margin-top: 2rem;}
+.main-container .sobre-page .sobre-desc{
+	background-color: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	margin: 1em 0;
+	text-align: justify;
+}
+.main-container .sobre-page .bt-contato{
+	padding: 3.5rem 0;
+	text-align: center;
+}
+.main-container .sobre-page .bt-contato a{
+	background-color: #4a423f;
+	border: 0.15em solid;
+	border-radius: 5%/15%;
+	color: #dfdfdf;
+	display: inline-block;
+	font-size: 1.5rem;
+	padding: 0.3rem 1.2rem;
+}
+.main-container .sobre-page .bt-contato a:hover{
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #deff00;
+}
+
+/************* portfolio ***************/
+
+.main-container .portfolio-page{
+	background-color:#111;
+	padding-bottom: 12rem;
+	position: relative;
+	z-index: 1;
+}
+.main-container .portfolio-page::before{
+	background-color:#111;
+	content: '';
+	height: 10%;
+	left: 0;
+	position: absolute;
+	transform: rotate(-12deg);
+	transform-origin: left top;
+	top: 0;
+	width: 150%;
+	z-index: -1;
+}
+.main-container .portfolio-page .galeria-portfolio{
+	padding-top: 2rem;
+}
+.main-container .portfolio-page .galeria-portfolio a{
+	display: block;
+	position: relative;
+}
+.main-container .portfolio-page .galeria-portfolio a img{width: 100%;}
+.main-container .portfolio-page .galeria-portfolio a .container-description{
+	/*background-color: rgba(222, 255, 0, 0.8);*/
+	background-color: rgba(255, 255, 255, 0.85);
+	border: 0.15rem solid;
+	box-sizing: border-box;
+	color: #4a423f;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	opacity: 0;
+	padding: 1rem;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.main-container .portfolio-page .galeria-portfolio a:hover .container-description{
+	opacity: 1;
+}
+.main-container .portfolio-page .galeria-portfolio a .container-description .title{
+	font-size: 1.7rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+/************* contato ***************/
+
+.main-container .contato-page{
+	/*background: url(../img/bg/bg-contato.jpg) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;*/
+	background-color: #def066;
+	padding-bottom: 0;
+	position: relative;
+	z-index: 1;
+}
+.main-container .contato-page::before{
+	background-color:#def066;
+	content: '';
+	height: 20%;
+	left: 0;
+	position: absolute;
+	transform: rotate(-12deg);
+	transform-origin: left top;
+	top: 0;
+	width: 150%;
+	z-index: -1;
+}
+.main-container .contato-page h1{
+	color: #4a423f;
+}
+.main-container .contato-page .contato-info{
+	color: #4a423f;
+	font-size: 1.2rem;
+	padding: 2rem 1rem;
+	text-align: center;
+}
+.main-container .contato-page .contato-list{margin: 3rem 0;}
+.main-container .contato-page .contato-list li{
+	border-bottom: 0.11rem solid;
+	display: flex;
+    flex-direction: column;
+	font-size: 1.7rem;
+	padding: 0.7rem 0;
+}
+.main-container .contato-page .contato-info .contato-list a{font-size: 1.7rem;}
+.main-container .contato-page .contato-list li i{font-size: 3.5rem;}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
