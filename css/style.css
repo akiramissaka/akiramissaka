@@ -69,9 +69,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body{margin:0;}
 h1{
 	color: #deff00;
+	font-size: 2rem;
 	margin: 0.65em 0;
 	text-align: center;
 }
@@ -149,6 +150,9 @@ nav.menu-nav ul.main-menu{
 	overflow: hidden;
 	padding-top: 0.5rem;
 }
+nav.menu-nav ul.main-menu li.selected{
+	border-left: 0.3rem solid #deff00;
+}
 nav.menu-nav ul.main-menu a{
 	box-sizing:border-box;
 	color: #deff00;
@@ -200,6 +204,7 @@ nav.menu-nav ul.main-menu a:hover{
 	display: inline-block;
 	font-size: 1.5rem;
 	padding: 0.3rem 1.2rem;
+	transition: background-color 500ms, color 500ms;
 }
 .main-container .sobre-page .bt-contato a:hover{
 	background-color: rgba(0, 0, 0, 0.8);
@@ -231,15 +236,19 @@ nav.menu-nav ul.main-menu a:hover{
 }
 .main-container .portfolio-page .galeria-portfolio a{
 	display: block;
+	overflow: hidden;
 	position: relative;
 }
-.main-container .portfolio-page .galeria-portfolio a img{width: 100%;}
+.main-container .portfolio-page .galeria-portfolio a img{
+	transition: transform 0.5s;
+	width: 100%;
+}
 .main-container .portfolio-page .galeria-portfolio a .container-description{
-	/*background-color: rgba(222, 255, 0, 0.8);*/
-	background-color: rgba(255, 255, 255, 0.85);
+	background-color: rgba(222, 255, 0, 0.8);
+	/*background-color: rgba(255, 255, 255, 0.85);*/
 	border: 0.15rem solid;
 	box-sizing: border-box;
-	color: #4a423f;
+	color: #111;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -248,8 +257,12 @@ nav.menu-nav ul.main-menu a:hover{
 	padding: 1rem;
 	position: absolute;
 	top: 0;
+	transition: opacity 0.5s;
 	width: 100%;
 	z-index: 1;
+}
+.main-container .portfolio-page .galeria-portfolio a:hover img{
+	transform: scale(1.3);
 }
 .main-container .portfolio-page .galeria-portfolio a:hover .container-description{
 	opacity: 1;
