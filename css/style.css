@@ -184,6 +184,7 @@ body:before {
 	height: 100%;
 	z-index: -10;
 	background: url(../img/bg/bg-sobre.jpg) no-repeat center center;
+	background-position: 50% 50% !important;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	-o-background-size: cover !important;
