@@ -39,6 +39,8 @@ $(document).ready(function(){
 	
 	}
 	
+	//$('#sobre').backstretch('img/bg/bg-sobre.jpg');
+	
 	//adicionando listeners de eventos
 	$('.menu-nav .menu-mob').on('click', clickMenuMob);
 	$('.main-menu a').on('click', menuNav);

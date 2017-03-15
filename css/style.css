@@ -168,13 +168,13 @@ nav.menu-nav ul.main-menu a:hover{
 /************* sobre mim ***************/
 
 .main-container .sobre-page{
-	/*background: url(../img/bg/bg-sobre.jpg) no-repeat center;
+	background: url(../img/bg/bg-sobre.jpg) no-repeat center;
 	background-attachment: fixed;
-	background-size: cover;*/
+	background-size: cover;
 	padding-bottom: 6rem;
 	position: relative;
 }
-body:before {
+/*body:before {
 	content: "";
 	display: block;
 	position: fixed;
@@ -189,7 +189,7 @@ body:before {
 	-moz-background-size: cover !important;
 	-o-background-size: cover !important;
 	background-size: cover !important;
-}
+}*/
 .main-container .sobre-page .container-foto-desc{
 	display: flex;
 	flex-wrap: wrap;
