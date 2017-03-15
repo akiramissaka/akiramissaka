@@ -168,11 +168,20 @@ nav.menu-nav ul.main-menu a:hover{
 /************* sobre mim ***************/
 
 .main-container .sobre-page{
-	background: url(../img/bg/bg-sobre.jpg) no-repeat center;
+	/*background: url(../img/bg/bg-sobre.jpg) no-repeat center;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: cover;*/
 	padding-bottom: 6rem;
 	position: relative;
+}
+.main-container .sobre-page .bg-fixed{
+	background: url(../img/bg/bg-sobre.jpg) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -1;
 }
 /*body:before {
 	content: "";

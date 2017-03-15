@@ -39,6 +39,7 @@ $(document).ready(function(){
 	
 	}
 	
+
 	//$('#sobre').backstretch('img/bg/bg-sobre.jpg');
 	
 	//adicionando listeners de eventos
