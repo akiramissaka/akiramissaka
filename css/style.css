@@ -174,7 +174,7 @@ nav.menu-nav ul.main-menu a:hover{
 	padding-bottom: 6rem;*/
 	position: relative;
 }
-.main-container .sobre-page:before { /*alternativa para bg fixed em mobile*/
+body:before { /*alternativa para bg fixed em mobile*/
   content: "";
   display: block;
   position: fixed;
