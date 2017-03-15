@@ -261,10 +261,10 @@ nav.menu-nav ul.main-menu a:hover{
 	width: 100%;
 	z-index: 1;
 }
-.main-container .portfolio-page .galeria-portfolio a:hover img{
+.main-container .portfolio-page .galeria-portfolio a:hover img, .main-container .portfolio-page .galeria-portfolio a:focus img{
 	transform: scale(1.3);
 }
-.main-container .portfolio-page .galeria-portfolio a:hover .container-description{
+.main-container .portfolio-page .galeria-portfolio a:hover .container-description, .main-container .portfolio-page .galeria-portfolio a:focus .container-description{
 	opacity: 1;
 }
 .main-container .portfolio-page .galeria-portfolio a .container-description .title{

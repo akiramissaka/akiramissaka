@@ -19,7 +19,7 @@ $(document).ready(function(){
 	}
 	
 	function currentPage(){	//função para ver qual seção está mais visivel na tela para deixar a respectiva opçao do menu já selecionada
-		//console.log(arguments.callee.caller);
+		//console.log(e.originalEvent);
 		var iScrollTop = $(window).scrollTop();
 		var arrPages = $('.main-container > .page');
 		
@@ -43,5 +43,5 @@ $(document).ready(function(){
 	$('.menu-nav .menu-mob').on('click', clickMenuMob);
 	$('.main-menu a').on('click', menuNav);
 	$('.bt-contato a').on('click', menuNav);
-	$(window).on('mousewheel', currentPage);
+	$(window).on('scroll', currentPage);
 });
