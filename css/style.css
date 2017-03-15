@@ -170,7 +170,7 @@ nav.menu-nav ul.main-menu a:hover{
 .main-container .sobre-page{
 	background: url(../img/bg/bg-sobre.jpg) no-repeat center;
 	background-attachment: fixed;
-	background-size: cover;
+	
 	padding-bottom: 6rem;
 	position: relative;
 }
