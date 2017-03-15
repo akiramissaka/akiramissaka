@@ -213,6 +213,8 @@ nav.menu-nav ul.main-menu a:hover{
 .main-container .sobre-page .container-foto img{margin-top: 2rem;}
 .main-container .sobre-page .sobre-desc{
 	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom: 0.12rem solid;
+	border-top: 0.12rem solid;
 	box-sizing: border-box;
 	margin: 1em 0;
 	text-align: justify;
