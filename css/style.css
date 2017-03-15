@@ -222,7 +222,7 @@ nav.menu-nav ul.main-menu a:hover{
 .main-container .portfolio-page::before{
 	background-color:#111;
 	content: '';
-	height: 10%;
+	height: 70%;
 	left: 0;
 	position: absolute;
 	transform: rotate(-12deg);
@@ -233,11 +233,14 @@ nav.menu-nav ul.main-menu a:hover{
 }
 .main-container .portfolio-page .galeria-portfolio{
 	padding-top: 2rem;
+	display: flex;
+	flex-flow: wrap;
 }
 .main-container .portfolio-page .galeria-portfolio a{
 	display: block;
 	overflow: hidden;
 	position: relative;
+	width: 100%;
 }
 .main-container .portfolio-page .galeria-portfolio a img{
 	transition: transform 0.5s;
@@ -278,9 +281,6 @@ nav.menu-nav ul.main-menu a:hover{
 /************* contato ***************/
 
 .main-container .contato-page{
-	/*background: url(../img/bg/bg-contato.jpg) no-repeat center;
-	background-attachment: fixed; 
-	background-size: cover;*/
 	background-color: #def066;
 	padding-bottom: 0;
 	position: relative;
@@ -289,7 +289,7 @@ nav.menu-nav ul.main-menu a:hover{
 .main-container .contato-page::before{
 	background-color:#def066;
 	content: '';
-	height: 20%;
+	height: 70%;
 	left: 0;
 	position: absolute;
 	transform: rotate(-12deg);
@@ -328,8 +328,28 @@ nav.menu-nav ul.main-menu a:hover{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 600px) {
     /* Style adjustments for viewports that meet the condition */
+	.main-container .portfolio-page::before{
+		transform: rotate(-10deg);
+	}
+	.main-container .contato-page::before{
+		transform: rotate(-10deg);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+	.main-container .portfolio-page::before{transform: rotate(-8deg);}
+	.main-container .portfolio-page .galeria-portfolio a{flex: 0 0 50%;}
+	.main-container .contato-page::before{transform: rotate(-8deg);}
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Style adjustments for viewports that meet the condition */
+	.main-container .portfolio-page::before{transform: rotate(-5deg);}
+	.main-container .portfolio-page .galeria-portfolio a{flex: 0 0 33.3333%;}
+	.main-container .contato-page::before{transform: rotate(-5deg);}
 }
 
 @media print,
