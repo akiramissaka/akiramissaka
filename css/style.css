@@ -170,21 +170,14 @@ nav.menu-nav ul.main-menu a:hover{
 .main-container .sobre-page{
 	/*background: url(../img/bg/bg-sobre.jpg) no-repeat center;
 	background-attachment: fixed;
-	background-size: cover;
-	padding-bottom: 6rem;*/
+	background-size: cover;*/
+	padding-bottom: 6rem;
 	position: relative;
 }
-body:before { /*alternativa para bg fixed em mobile*/
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(../img/bg/bg-sobre.jpg) no-repeat center center;
-  background-size: cover;
+body { /*alternativa para bg fixed em mobile*/
+	background: url(../img/bg/bg-sobre.jpg) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 .main-container .sobre-page .container-foto-desc{
 	display: flex;
