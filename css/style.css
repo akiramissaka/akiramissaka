@@ -345,6 +345,11 @@ nav.menu-nav ul.main-menu a:hover{
 }
 .main-container .contato-page .contato-info .contato-list a{font-size: 1.7rem;}
 .main-container .contato-page .contato-list li i{font-size: 3.5rem;}
+.main-container .contato-page .credit, .main-container .contato-page .credit a{
+	color: #4a423f;
+	font-size: 0.8rem;
+	text-align: center;
+}
 
 
 /* ==========================================================================
