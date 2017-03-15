@@ -175,9 +175,12 @@ nav.menu-nav ul.main-menu a:hover{
 	position: relative;
 }
 body { /*alternativa para bg fixed em mobile*/
-	background: url(../img/bg/bg-sobre.jpg) no-repeat center;
-	background-attachment: fixed;
+	background: url(../img/bg/bg-sobre.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
 }
 .main-container .sobre-page .container-foto-desc{
 	display: flex;
