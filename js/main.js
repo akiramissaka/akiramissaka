@@ -18,8 +18,10 @@ $(document).ready(function(){
 		if(isMenuMobile()){
 			$('nav.menu-nav ul.main-menu').slideUp(200);
 		}
-		$('.menu-nav .main-menu li').removeClass('selected');	//remove a classe selected de todos os li do menu
-		$(this).parent().addClass('selected');					//adiciona a classe selected ao li clicado
+		if($(this).parent().is('li')){
+			$('.menu-nav .main-menu li').removeClass('selected');	//remove a classe selected de todos os li do menu
+			//$(this).parent().addClass('selected');					//adiciona a classe selected ao li clicado
+		}
 		if($('nav.menu-nav ul.main-menu').hasClass('show-mobile')){	//caso o menu esteja aberto, subtrai a altura do ul tbm, senao apenas do nav
 			$('html,body').animate({scrollTop:$(this.hash).offset().top - ($('.menu-nav').height() - $('.menu-nav .main-menu').height() - 5)}, 500);
 		}else{
@@ -49,11 +51,12 @@ $(document).ready(function(){
 	}
 	
 	function menuPosition(){
+		var st = $(window).scrollTop();
+		var ulTop = $('nav.menu-nav ul.main-menu').offset().top;
+		var navHeight = $('nav.menu-nav').offset().top + $('nav.menu-nav').height();
+
 		if(isMenuMobile() == false){
-			var st = $(window).scrollTop();
-			var ulTop = $('nav.menu-nav ul.main-menu').offset().top;
-			var navHeight = $('nav.menu-nav').offset().top + $('nav.menu-nav').height();
-			var t;
+			var t, t2;
 			
 			if(st >= ulTop && $('nav.menu-nav ul.main-menu').hasClass('fixed') == false){
 				$('nav.menu-nav .logo a').addClass('invisible');
@@ -63,14 +66,21 @@ $(document).ready(function(){
 					$('nav.menu-nav .logo a').removeClass('invisible');
 				}, 200);
 				//clearTimeout(t);
+				console.log(1);
 			}
+			//console.log(st  + '//' + navHeight);
 			if(st <= navHeight){
 				//$('nav.menu-nav .logo a').removeClass('invisible');
 				$('nav.menu-nav ul.main-menu').removeClass('fixed');
-				//t = setTimeout(function(){ 
+				//t2 = setTimeout(function(){ 
 					$('nav.menu-nav .logo a').removeClass('fixed');
 				//}, 300);
 			}
+		}else{
+			if($('nav.menu-nav .dev').is(':visible')){
+				$('nav.menu-nav .dev').fadeOut(200);
+			}
+			
 		}
 	}
 	
