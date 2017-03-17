@@ -75,8 +75,10 @@ $(document).ready(function(){
 				//}, 300);
 			}
 		}else{
-			if($('nav.menu-nav .dev').is(':visible')){
+			if(st > 0){
 				$('nav.menu-nav .dev').fadeOut(200);
+			}else{
+				$('nav.menu-nav .dev').fadeIn(200);
 			}
 			
 		}
