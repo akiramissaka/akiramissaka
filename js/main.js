@@ -56,7 +56,7 @@ $(document).ready(function(){
 		var navHeight = $('nav.menu-nav').offset().top + $('nav.menu-nav').height();
 
 		if(isMenuMobile() == false){
-			var t, t2;
+			var t;
 			
 			if(st >= ulTop && $('nav.menu-nav ul.main-menu').hasClass('fixed') == false){
 				$('nav.menu-nav .logo a').addClass('invisible');
@@ -65,8 +65,6 @@ $(document).ready(function(){
 					$('nav.menu-nav .logo a').addClass('fixed');
 					$('nav.menu-nav .logo a').removeClass('invisible');
 				}, 200);
-				//clearTimeout(t);
-				console.log(1);
 			}
 			//console.log(st  + '//' + navHeight);
 			if(st <= navHeight){

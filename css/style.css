@@ -209,6 +209,13 @@ nav.menu-nav ul.main-menu a:hover{
 	padding: 1rem;
 	width: 100%;
 }
+.main-container .sobre-page .sobre-desc p{margin: 1em 0}
+.main-container .sobre-page .sobre-desc b{
+	color: #fff;
+	font-style: italic;
+	text-decoration: underline;
+	font-weight: normal;
+}
 .main-container .sobre-page .container-foto{text-align: center;}
 .main-container .sobre-page .container-foto img{margin-top: 2rem;}
 .main-container .sobre-page .sobre-desc{
@@ -368,6 +375,9 @@ nav.menu-nav ul.main-menu a:hover{
 	text-align: center;
 }
 
+
+/************* lightbox ***************/
+.fancybox-show-caption .fancybox-caption-wrap{text-align: center}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
