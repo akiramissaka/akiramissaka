@@ -53,14 +53,23 @@ $(document).ready(function(){
 			var st = $(window).scrollTop();
 			var ulTop = $('nav.menu-nav ul.main-menu').offset().top;
 			var navHeight = $('nav.menu-nav').offset().top + $('nav.menu-nav').height();
-
-			if(st >= ulTop){
+			var t;
+			
+			if(st >= ulTop && $('nav.menu-nav ul.main-menu').hasClass('fixed') == false){
+				$('nav.menu-nav .logo a').addClass('invisible');
 				$('nav.menu-nav ul.main-menu').addClass('fixed');
-				$('nav.menu-nav .logo a').addClass('fixed');
+				t = setTimeout(function(){ 
+					$('nav.menu-nav .logo a').addClass('fixed');
+					$('nav.menu-nav .logo a').removeClass('invisible');
+				}, 200);
+				//clearTimeout(t);
 			}
 			if(st <= navHeight){
+				//$('nav.menu-nav .logo a').removeClass('invisible');
 				$('nav.menu-nav ul.main-menu').removeClass('fixed');
-				$('nav.menu-nav .logo a').removeClass('fixed');
+				//t = setTimeout(function(){ 
+					$('nav.menu-nav .logo a').removeClass('fixed');
+				//}, 300);
 			}
 		}
 	}
