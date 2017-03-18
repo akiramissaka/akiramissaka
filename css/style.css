@@ -411,7 +411,11 @@ nav.menu-nav ul.main-menu a:hover{
 		top: 0;
 		z-index: 1;
 	}
-	nav.menu-nav .dev{display: block;}
+	nav.menu-nav .dev{
+		display: block;
+		padding-bottom: 1.5rem;
+		padding-top: 1.5rem;
+	}
 	nav.menu-nav ul.main-menu{
 		border-bottom: 0.1rem solid #deff00;
 		border-top: 0.1rem solid #deff00;
