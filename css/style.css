@@ -158,6 +158,7 @@ nav.menu-nav ul.main-menu a{
 	color: #deff00;
 	display: block;
 	font-size: 1.2rem;
+	height: 100%;
 	padding: 0.5rem 0.8rem;
 }
 nav.menu-nav ul.main-menu a:hover{
