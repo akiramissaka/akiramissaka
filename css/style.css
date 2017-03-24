@@ -207,6 +207,7 @@ nav.menu-nav ul.main-menu a:hover{
 }
 .main-container .sobre-page .container-foto,
 .main-container .sobre-page .sobre-desc{
+	box-sizing: border-box;
 	padding: 1rem;
 	width: 100%;
 }
