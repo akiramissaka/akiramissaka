@@ -219,7 +219,7 @@ nav.menu-nav ul.main-menu a:hover{
 	font-weight: normal;
 }
 .main-container .sobre-page .container-foto{text-align: center;}
-.main-container .sobre-page .container-foto img{margin-top: 2rem;}
+.main-container .sobre-page .container-foto img{margin-top: 4rem;}
 .main-container .sobre-page .sobre-desc{
 	background-color: rgba(0, 0, 0, 0.5);
 	border-bottom: 0.12rem solid;
@@ -451,6 +451,9 @@ nav.menu-nav ul.main-menu a:hover{
 	nav.menu-nav ul.main-menu li a{
 		padding-left: 3.4vw;
 		padding-right: 3.4vw;
+	}
+	.main-container .sobre-page .container-foto img{
+		margin-top: 2rem;
 	}
 	
 	/************* portfolio 600+ ***************/	
